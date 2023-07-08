@@ -60,17 +60,17 @@ def GA(objfun, numbers,x0s, xmax: np.array, pc=0.8, pm=0.1, generations=10000):
         Parameters:
             objfun: the object function (max f(x))
             numbers: how many members of a generation
-            x0s: the first generation point matrix, size: [numbers, dim]
+            x0s: the first generation point matrix, size=[numbers, dim]
             xmax: the maximum mutation step
-            pc: the probability of mating. Default: 0.8
-            pm: the probability of mutation. Default: 0.1
-            generation: the number of iter generation. Default: 10000
+            pc: the probability of mating. Default=0.8
+            pm: the probability of mutation. Default=0.1
+            generation: the number of iter generation. Default=10000
 
         Returns:
-            Best: the best solution. Type: np.array
-            Best_value: the best optimized value. Type: np.float
-            Best_generation: how many iter times we got the best answer. Type: int
-            generation_iter_bestvalue: the best value of every times iter. Type: np.array.
+            Best: the best solution. Type=np.array
+            Best_value: the best optimized value. Type=np.float
+            Best_generation: how many iter times we got the best answer. Type=int
+            generation_iter_bestvalue: the best value of every times iter. Type=np.array.
     '''
     population = []
     generation_iter_bestvalue = np.zeros(generations)
